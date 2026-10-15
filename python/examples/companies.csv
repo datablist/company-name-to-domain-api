@@ -1,0 +1,5 @@
+company_name,source_id,notes
+Datablist,crm-001,Company website lookup
+Stripe,crm-002,Payments
+Microsoft,crm-003,Software
+Stripe,crm-004,Separate record for the same company
