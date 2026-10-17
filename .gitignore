@@ -14,3 +14,4 @@ output/
 results*.jsonl
 *_enriched.csv
 tests/
+AGENTS.md
