@@ -20,7 +20,10 @@ lookups in the [API settings](https://platform.datablist.com/docs/enrichments/to
 
 ## Get started
 
-To try the API without Python, jump to the [cURL example](#try-with-curl).
+Choose [Python](python/README.md) or [TypeScript](typescript/README.md).
+The commands below use Python.
+
+To try the API from your terminal, jump to the [cURL example](#try-with-curl).
 
 1. [Create a Personal API Key](https://app.datablist.com/account/api).
 2. With Python 3.12 or newer, run the commands below from this repository's root.
@@ -170,8 +173,26 @@ Each basic file is self-contained and shows the HTTP calls step by step.
 
 See the [Python README](python/README.md) for CSV instructions and customization.
 
+## TypeScript example
+
+Use [the standalone TypeScript example](typescript/example.ts) with Node.js 24.3+;
+no packages to install. From the repository root:
+
+```sh
+export DATABLIST_API_KEY='your-personal-api-key'
+node typescript/example.ts
+```
+
+See the [TypeScript guide](typescript/README.md) for editable inputs and settings.
+
 ## Documentation
 
 - [Company Name to Domain API](https://platform.datablist.com/docs/enrichments/tools/company-name-to-domain)
 - [Enrichments API quickstart](https://platform.datablist.com/docs/enrichments/quickstart)
 - [Task lifecycle](https://platform.datablist.com/docs/enrichments/tasks)
+
+## Other Datablist API examples
+
+- [Company Name Cleaner API](https://github.com/datablist/company-name-cleaner-api): clean and standardize company names.
+- [LinkedIn Profile Finder API](https://github.com/datablist/linkedin-profile-finder-api): find profiles from names and company keywords.
+- [Impressum Scraper API](https://github.com/datablist/impressum-scraper-api): extract business details from website Impressum pages.
