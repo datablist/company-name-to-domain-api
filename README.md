@@ -18,6 +18,18 @@ lookups in the [API settings](https://platform.datablist.com/docs/enrichments/to
 - **Standalone API:** use the results in your own application without creating
   a Datablist workspace or uploading a spreadsheet to the app.
 
+## Cost
+
+- **1 credit per company lookup** using the dataset.
+- **2.5 credits per company lookup** when Google search is used.
+
+The default `dataset_google` workflow uses Google only when needed. Cached
+Google results cost 1 credit.
+
+Costs are in Datablist credits. Each result reports its actual `creditsUsed`.
+See the [API cost and limits](https://platform.datablist.com/docs/enrichments/tools/company-name-to-domain#credits-and-limits)
+and [credit pack pricing](https://www.datablist.com/pricing) for current rates.
+
 ## Get started
 
 Choose [Python](python/README.md) or [TypeScript](typescript/README.md).
@@ -37,9 +49,7 @@ python sync_requests.py
 ```
 
 See the [Python setup guide](python/README.md#setup) for virtual environment
-instructions. Calls can consume account credits; check the
-[current pricing](https://platform.datablist.com/docs/enrichments/tools/company-name-to-domain#credits-and-limits)
-before running the examples.
+instructions.
 
 ## Try with cURL
 
